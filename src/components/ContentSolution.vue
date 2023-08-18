@@ -7,9 +7,9 @@
                         <img class="Scale" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACkAAAAwCAYAAACMuVOlAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAJ5SURBVHgB1ZmBdaMwDIZFFzhGIBtwE5Sb4LpBskGuEzSdIN3A7QT0Jkg7QbsBdIJmg79Snb5HiY1tsEn6vaeQGCT/SGCMQxQBAAXblu0dmprtis4BFlKxKdhp2JZ0Cg6ZGxJnEvuX5oI7+9cpayhKTpBSwcFLth2m0yD2JcABc7Y7xOcFMbKKaaX1RQWLhc7cGrosc6JsYjMRxVu5Rko2Oaii0/LK1h62D1mWtSKy5h/nMfAes2dbiEjQebO6IK32nGl/gkiaU+Qj22+2DYXRypBTIz1Nd3iBnpg0nr75XJncyFDy9YO/P/Hm2sNvz8fuRWRLabnnjh4M7aXbVWsTkW+Ujpbttt94KP0NuWnlQ0S+Ujquu2XusCM/WvlIWe47FvjYb+Qsbkg/fn146jr63mnCDu4JiOzLDQIrhFF2nZWnk+r4FLALvTQIzBE4s+oHWHv41IaOTUKNNwTCJ867foDSw2lt6bwrtLEcE1pmYWsK5JqBy/7SIbQY2BfKpakj5eE4JDS3tPvEPeqHLMFWvgFsQifE7FPbAubwf+lyCsX4MgvLocAqINCgUIwr82dccpx96F1oFIrxZRYUuUD4KsU3oZhWZqHwETkmCyJ0yXYFvTIxFuPEI7MIlUG5oPmpeFLy3G+8sBx8S/NzbxIoZDaPQ+ormo+FZe5pzaQwZzY3NoFOoNfBU9PA8kj9InOIFOcXSnsTLVxZHCq3vHrK6+4fSvfaO77MfaDHv9hsKTbQq76xqCkVHPwG05EnUk4pmShUJRfYESrXaOiCf/xr0EOo72xHTmZNpwJ6Nj804Mf5ryYGOF5vjJq9jCLCwla8+cX2P9ogzXwA6x7Hi6w37esAAAAASUVORK5CYII=" alt="vector-img">
                     </div>
                     <h4 class="text-start">SIEM - Security Information and Event Management</h4>
-                    <a class="text-end " href="/solutions/siem">
+                    <router-link to="/siem" class="text-end " href="/solutions/siem">
                         <i class="fa fa-long-arrow-right text-3xl Scale"></i>
-                    </a>
+                    </router-link>
                 </article>
                 <article class="relative notHoverSolutions">
                     <div class="lazyload-wrapper ">
@@ -79,7 +79,7 @@
                 <h1 class="text2">SOLUTION</h1>
                 <p class="my-text">We Provide Cyber Security Solutions That Meet The Unique Needs Of Our Customers And Help Them Succeed In An Increasingly Digital World.</p>
                 <div class="lazyload-wapper">
-                <img src="https://fagonet.com/assets/Thumbsup1-2e610cd9.png">
+                <img  class="key" src="https://fagonet.com/assets/Thumbsup1-2e610cd9.png">
                 </div>
             </div>
     </section>
@@ -111,7 +111,6 @@ name: 'contentsolution'
     grid-template-columns: repeat(2,1fr);
     gap: 24px;  
     padding:80px 0 ;
-    
 }
 .home-solutions>article {
     height: 210px;
@@ -128,8 +127,7 @@ name: 'contentsolution'
     color: #fff;
     position:relative;
 }
-.home-solutions>article:hover{
-    transform: scale(.98);
+.notHoverSolutions:hover{
     color:#003249 !important;
     background:#fff;
 }
@@ -142,7 +140,6 @@ name: 'contentsolution'
     font-weight:700;
     margin-top: .5rem;
     margin-bottom: .5rem;
-    color:#fff;
 }
 .text-black{
     --tw-text-opacity: 1;
@@ -157,5 +154,22 @@ name: 'contentsolution'
     font-weight:700;
     --tw-text-opacity: 1;
     color: rgb(33 90 116/var(--tw-text-opacity));
+}
+.fa{
+    margin:25px 0px;
+}
+@media (max-width: 1023px) {
+.key{
+    width:100px;
+    height:100px;
+}
+.content-solution{
+    display:block;
+}
+}
+@media (max-width: 760px) {
+    .text2{
+        font-size:32px;
+    }
 }
 </style>

@@ -10,7 +10,7 @@
         </div>
         <!-- Add image here -->
         <div class="half">
-          <img class="m-auto w-4/5 Scale" src="https://fagonet.com/assets/Thumbsup-6f16196c.png" alt="intro-img-home">
+          <img class="half-key m-auto w-4/5 Scale" src="https://fagonet.com/assets/Thumbsup-6f16196c.png" alt="intro-img-home">
         </div>
       </section>
     </div>
@@ -71,7 +71,47 @@ name: 'contenthome'
   background-color: #80ced7;
     color: #215a74;
 }
-.Scale{
-  
+@media (max-width: 1023px) {
+  .half-key{
+    width:307px;
+    height:356px;
+  }
+  .get-started{
+    margin: 0px 187px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media (max-width: 760px) {
+  .text {
+    text-align: center;
+    font-size:32px;
+    }
+    .half{
+      width:130%;
+    }
+    .text2 {
+        text-align: center;
+        font-size:32px;
+    }
+    .text-gray{
+        text-align:start;
+        height:76px;
+        width:360px;
+    }
+    .half-key{
+        width:165px;
+        height:191px;
+    }
+    .header-home-page{
+      display:block;
+      margin:0;
+    }
+    .get-started{
+      margin: auto;
+    
+    margin-top:22px;
+    }
 }
 </style>

@@ -159,6 +159,11 @@ export default {
 .slider .slide {
   height: 150px;
   width: 250px;
-  
+}
+@media (max-width: 1023px) {
+  .slider{
+    width:72%;
+    margin:0;
+  }
 }
 </style>
